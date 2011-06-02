@@ -26,7 +26,7 @@
   <title><?php wp_title('&mdash;', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
   <meta name="description" content="<?php bloginfo('description'); ?>">
-  <meta name="author" content="Daniel Marino">
+  <meta name="author" content="">
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -43,19 +43,3 @@
 </head>
 
 <body>
-
-  <div id="container">
-
-    <div class="header_bg">
-      <header class="container_12 clearfix">
-        <nav>
-          <?php wp_nav_menu(array('menu' => 'Top Left', 'container' => '', 'menu_class' => 'first')); ?>
-          <?php wp_nav_menu(array('menu' => 'Top Right', 'container' => '', 'menu_class' => 'last')); ?>
-        </nav>
-        <h1>
-          <a href="<?php echo home_url('/'); ?>">
-            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="Benny's Bloody Mary Beef Straw Logo" />
-          </a>
-        </h1>
-      </header>
-    </div>
