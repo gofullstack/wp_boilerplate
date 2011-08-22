@@ -1,13 +1,13 @@
 <?php
-
-/*
- *  functions.php
- *  -------------------
- *  Custom functions used in this theme. Several commonly used
- *  functions are included - uncomment what you want to use
+/**
+ * The template for displaying the sidebar.
+ *
+ * Custom & Commonly used functions throughout
+ * our projects. Uncomment the functions you need
+ * to use.
  *
  */
-
+?>
 
 function theme_init() {
 

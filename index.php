@@ -1,20 +1,30 @@
 <?php
-
-/*
- *  index.php
- *  -------------------
- *  Template used for the home page. By default it contains
- *  a loop that queries and then displays the most recent
- *  blog posts. To use a custom designed home page, go to
- *  wp-admin > settings > reading and set "Front page displays"
- *  to "A static page" and select the page to use.
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * To use a custom designed home page, go to
+ * wp-admin > settings > reading and set "Front page displays"
+ * to "A static page" and select the page to use.
+ *
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  */
 
+get_header();
+
 ?>
 
-
-<?php get_header(); ?>
-
+  <?php
+  /* Run the loop to output the posts.
+   * If you want to overload this in a child theme then include a file
+   * called loop-index.php and that will be used instead.
+   */
+   get_template_part( 'loop', 'index' );
+  ?>
 
 <?php get_footer(); ?>

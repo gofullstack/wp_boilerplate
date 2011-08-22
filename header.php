@@ -1,30 +1,26 @@
 <?php
-
-/*
- *  header.php
- *  -------------------
- *  Global file that displays headers, <head> and the top
- *  <body> portion of a website.
+/**
+ * The template for displaying page top.
+ *
+ * Global file that displays headers, <head> and the top
+ * <body> portion of a website.
  *
  */
-
 ?>
 
 <!doctype html>
-
-<!--[if lt IE 7]> <html <?php body_class('no-js ie6'); ?> lang="en"> <![endif]-->
-<!--[if IE 7]>    <html <?php body_class('no-js ie7'); ?> lang="en"> <![endif]-->
-<!--[if IE 8]>    <html <?php body_class('no-js ie8'); ?> lang="en"> <![endif]-->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html <?php body_class('no-js ie6 oldie'); ?> lang="en"> <![endif]-->
+<!--[if IE 7]>    <html <?php body_class('no-js ie7 oldie'); ?> lang="en"> <![endif]-->
+<!--[if IE 8]>    <html <?php body_class('no-js ie8 oldie'); ?> lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html <?php body_class('no-js'); ?> lang="en"> <!--<![endif]-->
 
 <head>
-
   <meta charset="utf-8">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 
   <title><?php wp_title('&mdash;', true, 'right'); ?><?php bloginfo('name'); ?></title>
-
   <meta name="description" content="<?php bloginfo('description'); ?>">
   <meta name="author" content="">
 
@@ -36,10 +32,9 @@
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
-  <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-1.7.min.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
 
   <?php wp_head(); ?>
-
 </head>
 
 <body>
