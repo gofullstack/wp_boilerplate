@@ -14,9 +14,8 @@
  * <code>get_template_part( 'loop', 'index' );</code>
  *
  */
-?>
 
-<?php while ( have_posts() ) : the_post(); ?>
+while ( have_posts() ) : the_post(); ?>
 
 
   <!-- HTML GOES HERE!!! -->

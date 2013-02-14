@@ -7,9 +7,8 @@
  *
  */
 ?>
-
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+
 <!--[if lt IE 7]> <html <?php body_class('no-js ie6 oldie'); ?> lang="en"> <![endif]-->
 <!--[if IE 7]>    <html <?php body_class('no-js ie7 oldie'); ?> lang="en"> <![endif]-->
 <!--[if IE 8]>    <html <?php body_class('no-js ie8 oldie'); ?> lang="en"> <![endif]-->
@@ -32,7 +31,7 @@
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
-  <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.6.2.min.js"></script>
 
   <?php wp_head(); ?>
 </head>
