@@ -5,7 +5,6 @@
  */
 
 get_header();
-
 ?>
 
   <!-- HTML GOES HERE!!! -->
